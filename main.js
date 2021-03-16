@@ -36,28 +36,26 @@ var arraystudenti =
 'cognome' : 'Botindari',
 'età' : 12,},
 
-
-
 ];
+
 for (var key in arraystudenti) {
 console.log(arraystudenti[key])
 }
 
 // UTENTE INSERISCE 3 OGGETTI CON NOME COGNOME ETA'
 
-for (var i = 0; i < 3; i++) {
+
 
   var insertstudenti =
 
-    {'nome' : prompt("Inserisci il tuo Nome"),
-  'cognome' : prompt("Inserisci il tuo Cognome"),
-  'età' : parseInt(prompt("Inserisci la tua Età "))
+    {
+      'nome' : prompt("Inserisci il tuo Nome"),
+      'cognome' : prompt("Inserisci il tuo Cognome"),
+      'età' : parseInt(prompt("Inserisci la tua Età ")),
     }
 
   console.log(insertstudenti)
+
   arraystudenti.push(insertstudenti);
 
-    }
-    for (var key in arraystudenti) {
-    console.log(arraystudenti[key])
-    }
+  console.log(arraystudenti)
